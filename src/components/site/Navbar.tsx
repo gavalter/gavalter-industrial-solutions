@@ -3,11 +3,11 @@ import { useEffect, useState } from "react";
 import { Menu, X, Factory } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-const links = [
-  { to: "/", label: "Home" },
+const links: { to: string; label: string; hash?: string }[] = [
+  { to: "/", label: "Product", hash: "product" },
+  { to: "/", label: "Features", hash: "features" },
+  { to: "/", label: "Specs", hash: "specs" },
   { to: "/about", label: "About" },
-  { to: "/products", label: "Products" },
-  { to: "/services", label: "Services" },
   { to: "/contact", label: "Contact" },
 ];
 
@@ -49,14 +49,14 @@ export function Navbar() {
         <nav className="hidden md:flex items-center gap-8">
           {links.map((l) => (
             <Link
-              key={l.to}
+              key={l.label}
               to={l.to}
-              activeOptions={{ exact: l.to === "/" }}
+              hash={l.hash}
+              activeOptions={{ exact: l.to === "/" && !l.hash }}
               className={cn(
                 "text-sm font-medium transition-colors relative",
                 scrolled ? "text-navy hover:text-accent" : "text-white/90 hover:text-white"
               )}
-              activeProps={{ className: "text-accent" }}
             >
               {l.label}
             </Link>
@@ -86,11 +86,11 @@ export function Navbar() {
           <div className="container-px py-4 flex flex-col gap-2">
             {links.map((l) => (
               <Link
-                key={l.to}
+                key={l.label}
                 to={l.to}
+                hash={l.hash}
                 onClick={() => setOpen(false)}
                 className="py-2 text-navy font-medium"
-                activeProps={{ className: "text-accent" }}
               >
                 {l.label}
               </Link>
