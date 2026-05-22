@@ -65,7 +65,7 @@ function ContactPage() {
               <label className="block text-sm font-semibold text-navy mb-1.5">Message</label>
               <textarea name="message" rows={5} required className="w-full rounded-md border border-border bg-background px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-accent" />
             </div>
-            <button disabled={sending} className="mt-6 inline-flex items-center gap-2 rounded-md bg-gradient-accent px-7 py-3 text-sm font-semibold text-white shadow-accent hover:brightness-110 transition disabled:opacity-60">
+            <button disabled={sending} className="mt-6 inline-flex items-center gap-2 rounded-md bg-gradient-accent px-7 py-3 text-sm font-semibold text-white shadow-accent hover:brightness-110 tr[...]
               {sending ? "Sending..." : <>Send message <Send className="h-4 w-4" /></>}
             </button>
           </form>
@@ -73,9 +73,9 @@ function ContactPage() {
           {/* Contact info */}
           <div className="lg:col-span-2 space-y-5">
             <InfoCard icon={MapPin} title="Office Location" lines={["Plot 24, Industrial Area", "Kampala, Uganda"]} />
-            <InfoCard icon={Phone} title="Phone" lines={["+256 700 123 456", "+256 414 555 000"]} href="tel:+256700123456" />
+            <InfoCard icon={Phone} title="Phone" lines={["+256 780 162 178"]} href="tel:+256780162178" />
             <InfoCard icon={Mail} title="Email" lines={["info@gavalter.co.ug", "sales@gavalter.co.ug"]} href="mailto:info@gavalter.co.ug" />
-            <a href="https://wa.me/256700123456" target="_blank" rel="noreferrer" className="block rounded-2xl p-6 text-white shadow-accent" style={{ background: "#25D366" }}>
+            <a href="https://wa.me/256780162178" target="_blank" rel="noreferrer" className="block rounded-2xl p-6 text-white shadow-accent" style={{ background: "#25D366" }}>
               <div className="flex items-center gap-4">
                 <div className="h-12 w-12 rounded-xl bg-white/20 grid place-items-center">
                   <MessageCircle className="h-6 w-6" />
