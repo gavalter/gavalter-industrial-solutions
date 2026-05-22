@@ -52,7 +52,7 @@ export function Footer() {
           <h4 className="text-white font-semibold mb-4">Contact</h4>
           <ul className="space-y-3 text-sm">
             <li className="flex gap-3"><MapPin className="h-4 w-4 text-accent shrink-0 mt-0.5" /> Plot 24, Industrial Area, Kampala, Uganda</li>
-            <li className="flex gap-3"><Phone className="h-4 w-4 text-accent shrink-0 mt-0.5" /> +256 700 123 456</li>
+            <li className="flex gap-3"><Phone className="h-4 w-4 text-accent shrink-0 mt-0.5" /> +256 780 162 178</li>
             <li className="flex gap-3"><Mail className="h-4 w-4 text-accent shrink-0 mt-0.5" /> info@gavalter.co.ug</li>
           </ul>
         </div>
