@@ -14,7 +14,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "ProSeries 1-Inch Handheld Inkjet Printer — Gavalter Industrial Supplies" },
-      { name: "description", content: "All-in-one industrial batch coder. 600 DPI, 25.4mm print height, 60 m/min. Print dates, logos, barcodes on any surface. Sold by Gavalter Industrial Supplies,[...]
+      { name: "description", content: "All-in-one industrial batch coder. 600 DPI, 25.4mm print height, 60 m/min. Print dates, logos, barcodes on any surface. Sold by Gavalter Industrial Supplies." },
       { property: "og:title", content: "ProSeries 1-Inch Handheld Inkjet Printer — Gavalter" },
       { property: "og:description", content: "Heavy-duty industrial handheld inkjet printer. 600 DPI, 1-10 lines, 25+ languages, 10-hour battery." },
       { property: "og:type", content: "product" },
@@ -91,10 +91,10 @@ function HomePage() {
               </p>
 
               <div className="mt-8 flex flex-wrap gap-3">
-                <Link to="/quote" className="inline-flex items-center gap-2 rounded-md bg-gradient-accent px-7 py-3.5 text-base font-semibold text-white shadow-accent hover:brightness-110 transiti[...]
+                <Link to="/quote" className="inline-flex items-center gap-2 rounded-md bg-gradient-accent px-7 py-3.5 text-base font-semibold text-white shadow-accent hover:brightness-110 transition">
                   Request Quote <ArrowRight className="h-4 w-4" />
                 </Link>
-                <a href="https://wa.me/256780162178" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-md border border-white/30 px-7 py-3.5 text-base font-semibol[...]
+                <a href="https://wa.me/256780162178" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-md border border-white/30 px-7 py-3.5 text-base font-semibold text-white hover:bg-white/10 transition">
                   WhatsApp Sales
                 </a>
               </div>
@@ -160,10 +160,10 @@ function HomePage() {
             <div className="text-xs font-semibold tracking-widest text-accent uppercase">Overview</div>
             <h2 className="text-2xl md:text-3xl font-bold text-navy">A wide-format powerhouse, in the palm of your hand</h2>
             <p className="text-muted-foreground leading-relaxed">
-              Take full control of your packaging line with the ultimate heavy-duty industrial marking solution. The ProSeries 1-Inch Handheld Inkjet Printer scales smoothly from tiny 2mm expirat[...]
+              Take full control of your packaging line with the ultimate heavy-duty industrial marking solution. The ProSeries 1-Inch Handheld Inkjet Printer scales smoothly from tiny 2mm expiry dates and lot numbers all the way to intricate 25.4mm graphics and QR codes.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Equipped with an intuitive 4.3-inch LED touchscreen — no computer or smartphone app required. Simply type your content or insert a USB drive to instantly stamp clean tracking deta[...]
+              Equipped with an intuitive 4.3-inch LED touchscreen — no computer or smartphone app required. Simply type your content or insert a USB drive to instantly stamp clean tracking details onto virtually any packaging material.
             </p>
           </div>
           <aside className="rounded-2xl border border-border bg-card p-7 shadow-card h-fit reveal">
@@ -254,7 +254,7 @@ function HomePage() {
               Your trusted industrial partner in East Africa
             </h2>
             <p className="mt-5 text-muted-foreground leading-relaxed">
-              Gavalter Industrial Supplies Ltd is a Kampala-based supplier serving manufacturers, contractors, and logistics operators across Uganda and East Africa. We focus on best-in-class ind[...]
+              Gavalter Industrial Supplies Ltd is a Kampala-based supplier serving manufacturers, contractors, and logistics operators across Uganda and East Africa. We focus on best-in-class industrial solutions backed by expert technical support.
             </p>
             <div className="mt-6 grid grid-cols-3 gap-4">
               {[
@@ -290,7 +290,7 @@ function HomePage() {
             <p className="mt-3 text-white/90 max-w-xl mx-auto">Request a tailored quote — bulk pricing available for distributors and OEMs.</p>
             <div className="mt-6 flex flex-wrap gap-3 justify-center">
               <Link to="/quote" className="inline-flex rounded-md bg-white px-7 py-3 font-semibold text-navy hover:bg-white/90 transition">Request Quote</Link>
-              <a href="https://wa.me/256780162178" target="_blank" rel="noreferrer" className="inline-flex rounded-md border border-white/40 px-7 py-3 font-semibold text-white hover:bg-white/10 t[...]
+              <a href="https://wa.me/256780162178" target="_blank" rel="noreferrer" className="inline-flex rounded-md border border-white/40 px-7 py-3 font-semibold text-white hover:bg-white/10 transition">WhatsApp Us</a>
             </div>
           </div>
         </div>
