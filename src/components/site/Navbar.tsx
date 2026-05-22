@@ -3,11 +3,11 @@ import { useEffect, useState } from "react";
 import { Menu, X, Factory } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-const links = [
-  { to: "/", label: "Home" },
+const links: { to: string; label: string; hash?: string }[] = [
+  { to: "/", label: "Product", hash: "product" },
+  { to: "/", label: "Features", hash: "features" },
+  { to: "/", label: "Specs", hash: "specs" },
   { to: "/about", label: "About" },
-  { to: "/products", label: "Products" },
-  { to: "/services", label: "Services" },
   { to: "/contact", label: "Contact" },
 ];
 
